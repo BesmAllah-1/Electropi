@@ -1,7 +1,7 @@
 def printing_board(board):
     """
     This function is supposed to print the board content.
-    It takes the board as an input and prints the board as an output.
+    It takes the board list as an input and prints its content the board as an output.
     """
     for row in board:
         print(row[0],"|",row[1],"|",row[2])

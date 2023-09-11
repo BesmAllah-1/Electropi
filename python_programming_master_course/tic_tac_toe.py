@@ -9,6 +9,11 @@ def printing_board(board):
 
 
 def handling_input(user_name,board):
+    """
+    This function is supposed to handle any errors when player does something unexpected.
+    It returns False if something went wrong.
+    It return True if everything is alright and the user has successfully reserved a valid square.
+    """
     user_symbol=input("Enter your symbol, 'x' or 'o': ")
     user_symbol=user_symbol.strip().lower()
 
@@ -87,6 +92,14 @@ def check_for_tie(board):
         
 
 def main_game():
+    """
+    This is the main fuction which combines all other sub-routines in a one unit to:
+    1. print the board content
+    2. handle the user input
+    3. checking for a winner
+    4. checking for a draw
+    """
+    print()
     print("First player always takes the symbol: 'x' and the second takes 'o'.")
     print("To select a specific square, enter a number in the range: 1-9 which corresponds to that square:")
     board=[["1","2","3"],["4","5","6"],["7","8","9"]]

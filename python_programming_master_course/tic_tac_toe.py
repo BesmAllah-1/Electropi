@@ -39,7 +39,7 @@ def handling_input(user_name,board):
     column=(user_input-1)%3
     if board[row][column]!=" ":
         print("This location is already taken")
-        return user_input
+        return False
     else:
         board[row][column]=user_name
         return True
